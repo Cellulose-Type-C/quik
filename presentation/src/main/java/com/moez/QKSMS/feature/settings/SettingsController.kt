@@ -187,6 +187,8 @@ class SettingsController : QkController<SettingsControllerBinding, SettingsView,
         messageLinkHandlingDialog.adapter.selectedItem = state.messageLinkHandlingId
 
         binding.disableScreenshots.checkbox?.isChecked = state.disableScreenshotsEnabled
+        binding.fingerprintLock.setVisible(state.fingerprintLockVisible)
+        binding.fingerprintLock.checkbox?.isChecked = state.fingerprintLockEnabled
 
         when (state.syncProgress) {
             is SyncRepository.SyncProgress.Idle -> binding.syncingProgress.isVisible = false

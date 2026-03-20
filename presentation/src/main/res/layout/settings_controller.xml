@@ -230,6 +230,16 @@
             app:title="@string/settings_disable_screenshots_title"
             app:widget="@layout/settings_switch_widget" />
 
+        <dev.octoshrimpy.quik.common.widget.PreferenceView
+            android:id="@+id/fingerprintLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:icon="@android:drawable/ic_lock_lock"
+            app:summary="@string/settings_fingerprint_lock_summary"
+            app:title="@string/settings_fingerprint_lock_title"
+            app:widget="@layout/settings_switch_widget" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

@@ -52,6 +52,7 @@ import io.reactivex.subjects.Subject
 import javax.inject.Inject
 
 class QkReplyActivity : QkThemedActivity(), QkReplyView {
+    override val requiresBiometricLock: Boolean = false
 
     private lateinit var binding: QkreplyActivityBinding
 
