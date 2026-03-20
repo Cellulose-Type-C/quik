@@ -24,6 +24,7 @@ import com.uber.autodispose.autoDisposable
 import dev.octoshrimpy.quik.R
 import dev.octoshrimpy.quik.common.Navigator
 import dev.octoshrimpy.quik.common.base.QkPresenter
+import dev.octoshrimpy.quik.common.util.BiometricLockManager
 import dev.octoshrimpy.quik.common.util.Colors
 import dev.octoshrimpy.quik.common.util.DateFormatter
 import dev.octoshrimpy.quik.common.util.extensions.makeToast
@@ -46,6 +47,7 @@ class SettingsPresenter @Inject constructor(
     private val dateFormatter: DateFormatter,
     private val navigator: Navigator,
     private val nightModeManager: NightModeManager,
+    private val biometricLockManager: BiometricLockManager,
     private val prefs: Preferences,
     private val syncMessages: SyncMessages
 ) : QkPresenter<SettingsView, SettingsState>(SettingsState(
@@ -143,6 +145,11 @@ class SettingsPresenter @Inject constructor(
         disposables += prefs.disableScreenshots.asObservable()
             .subscribe { enabled -> newState { copy(disableScreenshotsEnabled = enabled) } }
 
+        disposables += prefs.fingerprintLock.asObservable()
+            .subscribe { enabled -> newState { copy(fingerprintLockEnabled = enabled) } }
+
+        newState { copy(fingerprintLockVisible = biometricLockManager.isHardwareAvailable(context)) }
+
         disposables += syncRepo.syncProgress
                 .sample(16, TimeUnit.MILLISECONDS)
                 .distinctUntilChanged()
@@ -215,6 +222,8 @@ class SettingsPresenter @Inject constructor(
                         R.id.messsageLinkHandling -> view.showMessageLinkHandlingDialogPicker()
 
                         R.id.disableScreenshots -> prefs.disableScreenshots.set(!prefs.disableScreenshots.get())
+
+                        R.id.fingerprintLock -> prefs.fingerprintLock.set(!prefs.fingerprintLock.get())
 
                         R.id.sync -> syncMessages.execute(Unit)
 

@@ -133,6 +133,7 @@ class Preferences @Inject constructor(
     val mmsSize = rxPrefs.getInteger("mmsSize", 300)
     val messageLinkHandling = rxPrefs.getInteger("messageLinkHandling", MESSAGE_LINK_HANDLING_ASK)
     val disableScreenshots = rxPrefs.getBoolean("disableScreenshots", false)
+    val fingerprintLock = rxPrefs.getBoolean("fingerprintLock", false)
     val logging = rxPrefs.getBoolean("logging", false)
     val unreadAtTop = rxPrefs.getBoolean("unreadAtTop", false)
 
