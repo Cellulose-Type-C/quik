@@ -45,13 +45,13 @@
     <string name="archived_empty_text">Архивираните разговори ще се появят тук</string>
     <string name="main_fab_cd">Започване на разговор</string>
     <string name="main_default_sms_title">Отново заобичайте писането</string>
-    <string name="main_default_sms_message">Направете QUIK стандартното приложение за SMS</string>
+    <string name="main_default_sms_message">Направете SendSans стандартното приложение за SMS</string>
     <string name="main_default_sms_change">Променяне</string>
     <string name="settings_swipe_actions_change">ПРОМЕНЯНЕ</string>
     <string name="main_permission_required">Необходимо е разрешение</string>
-    <string name="main_permission_sms">QUIK се нуждае от разрешение за изпращане и преглед на SMS</string>
-    <string name="main_permission_contacts">QUIK се нуждае от разрешение за преглед на контактите</string>
-    <string name="main_permission_notifications">QUIK се нуждае от разрешение за показване на известия</string>
+    <string name="main_permission_sms">SendSans се нуждае от разрешение за изпращане и преглед на SMS</string>
+    <string name="main_permission_contacts">SendSans се нуждае от разрешение за преглед на контактите</string>
+    <string name="main_permission_notifications">SendSans се нуждае от разрешение за показване на известия</string>
     <string name="main_permission_allow">Разрешаване</string>
     <string name="scheduled_menu_send_now">Изпращане сега</string>
     <string name="compose_message_send_now">Изпращане сега</string>
@@ -67,7 +67,7 @@
     <string name="drawer_help">Помощ и обратна връзка</string>
     <string name="drawer_invite">Поканете приятели</string>
     <string name="drawer_plus_banner_summary">Отключете удивителни нови възможности и подкрепете разеаботката</string>
-    <string name="rate_title">Харесвате ли QUIK?</string>
+    <string name="rate_title">Харесвате ли SendSans?</string>
     <string name="rate_summary">Споделете любовта си и ни оставете звезда в Гитхъб!</string>
     <string name="rate_okay">Добре!</string>
     <string name="rate_dismiss">Затваряне</string>
@@ -105,7 +105,7 @@
     <string name="compose_vcard_label">Визитна картичка</string>
     <string name="compose_scheduled_for">Планирано за:</string>
     <string name="compose_scheduled_future">Времето трябва да е в бъдещето!</string>
-    <string name="compose_scheduled_plus">За да използвате тази възможност трябва да отключите QUIK+</string>
+    <string name="compose_scheduled_plus">За да използвате тази възможност трябва да отключите SendSans+</string>
     <string name="compose_scheduled_toast">Добавяне към планираните съобщения</string>
     <string name="compose_scheduled_view">Планирани съобщения към този разговор</string>
     <string name="compose_hint">Напишете съобщение…</string>
@@ -175,8 +175,8 @@
     <string name="blocking_block_title">Забраняване</string>
     <string name="backup_restore_title">Възстановяване</string>
     <string name="backup_restore_summary">Избиране на резервно копие</string>
-    <string name="backup_restore_error_plus">За да използвате тази възможност трябва да отключите QUIK+</string>
-    <string name="toast_qksms_plus">За да използвате тази възможност трябва да отключите QUIK+</string>
+    <string name="backup_restore_error_plus">За да използвате тази възможност трябва да отключите SendSans+</string>
+    <string name="toast_qksms_plus">За да използвате тази възможност трябва да отключите SendSans+</string>
     <string name="backup_restore_error_backup">Създава се резервно копие…</string>
     <string name="backup_restore_error_restore">Възстановяване на резервно копие…</string>
     <string name="backup_restore_confirm_title">Възстановяване от резервно копие</string>
@@ -279,7 +279,7 @@
     <string name="settings_diable_screenshots_summary">Забраняване на ОС и други приложения да снемат екранни снимки на приложението.</string>
     <string name="settings_sync_title">Синхронизиране на съобщения</string>
     <string name="settings_sync_summary">Принудително синхронизиране на съобщенията със съобщенията от хранилището на Андроид</string>
-    <string name="settings_about_title">Относно QUIK</string>
+    <string name="settings_about_title">Относно SendSans</string>
     <string name="settings_version">Издание %s</string>
     <string name="settings_logging_enabled">Дневникът за грешки е включен</string>
     <string name="settings_logging_disabled">Дневникът за грешки е изключен</string>
@@ -287,6 +287,6 @@
     <string name="blocking_drop_summary">Премахване на входящите съобщения от забранените изпращачи, вместо скриване</string>
     <string name="blocking_conversations">Забранени разговори</string>
     <string name="blocking_manager_title">Управление на забраните</string>
-    <string name="blocking_manager_qksms_summary">Вградена в QUIK възможност за забрани</string>
+    <string name="blocking_manager_qksms_summary">Вградена в SendSans възможност за забрани</string>
     <string name="blocking_manager_call_blocker_summary">Забранителният списък може да работи по график, за да забранява нежелани съобщения и входящи обаждания от определени или непознати номера</string>
 </resources>
